@@ -1,7 +1,7 @@
-<html><head><base href="https://viral-news-hub.com/noticias/index.html">
+<html><head><base href="index.html">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Las Noticias Más Virales | PortalNH.com</title>
+<title>As Notícias Mais Virais | PortalNH.com</title>
 <style>
   body {
     font-family: 'Roboto', Arial, sans-serif;
@@ -29,13 +29,14 @@
   }
   nav {
     margin-top: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   nav ul {
     padding: 0;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: flex-start;
   }
   nav ul li {
     margin: 5px;
@@ -44,7 +45,13 @@
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  nav ul li a:hover {
+    background-color: #3949ab;
   }
   .news-grid {
     display: grid;
@@ -106,7 +113,7 @@
       font-size: 2rem;
     }
     nav ul li a {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
     .news-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -116,6 +123,9 @@
   @media (min-width: 1024px) {
     .container {
       max-width: 1200px;
+    }
+    nav ul li a {
+      font-size: 1rem;
     }
     .news-grid {
       grid-template-columns: repeat(3, 1fr);
@@ -129,10 +139,13 @@
       <h1>PortalNH.com</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="categorias.html">Categorías</a></li>
-          <li><a href="tendencias.html">Tendencias</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="essa-semana.html">Essa Semana</a></li>
+          <li><a href="eventos.html">Eventos</a></li>
+          <li><a href="regiao.html">Região</a></li>
+          <li><a href="prefeitura.html">Prefeitura</a></li>
+          <li><a href="lista-telefonica.html">Lista Telefônica</a></li>
+          <li><a href="cultura-esportes.html">Cultura e Esportes</a></li>
+          <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
@@ -141,67 +154,67 @@
   <main class="container">
     <div class="news-grid">
       <article class="news-item">
-        <img src="images/ia-sinfonia.jpg" alt="Orquesta tocando frente a una pantalla que muestra una IA componiendo música" class="news-image" width="300" height="200">
+        <img src="images/ia-sinfonia.jpg" alt="Orquestra tocando em frente a uma tela mostrando uma IA compondo música" class="news-image" width="300" height="200">
         <div class="news-content">
-          <h2 class="news-title">IA Compone Sinfonía que Hace Llorar a la Audiencia</h2>
-          <p class="news-excerpt">Una sinfonía compuesta enteramente por IA conmueve profundamente a su audiencia durante su estreno mundial en el Royal Albert Hall de Londres.</p>
-          <a href="ia-compone-sinfonia-emotiva" class="read-more">Leer más</a>
+          <h2 class="news-title">IA Compõe Sinfonia que Faz Plateia Chorar</h2>
+          <p class="news-excerpt">Uma sinfonia composta inteiramente por IA comove profundamente sua audiência durante sua estreia mundial no Royal Albert Hall de Londres.</p>
+          <a href="ia-compoe-sinfonia-emotiva" class="read-more">Leia mais</a>
         </div>
       </article>
 
       <article class="news-item">
-        <img src="images/descubrimiento-arqueologico.jpg" alt="Arqueólogos excavando un sitio antiguo con pirámides en el fondo" class="news-image" width="300" height="200">
+        <img src="images/descoberta-arqueologica.jpg" alt="Arqueólogos escavando um sítio antigo com pirâmides ao fundo" class="news-image" width="300" height="200">
         <div class="news-content">
-          <h2 class="news-title">Descubrimiento Arqueológico Revoluciona la Historia Antigua</h2>
-          <p class="news-excerpt">Arqueólogos descubren una ciudad perdida que podría reescribir nuestra comprensión de las civilizaciones antiguas.</p>
-          <a href="descubrimiento-arqueologico-revolucionario" class="read-more">Leer más</a>
+          <h2 class="news-title">Descoberta Arqueológica Revoluciona a História Antiga</h2>
+          <p class="news-excerpt">Arqueólogos descobrem uma cidade perdida que pode reescrever nossa compreensão das civilizações antigas.</p>
+          <a href="descoberta-arqueologica-revolucionaria" class="read-more">Leia mais</a>
         </div>
       </article>
 
       <article class="news-item">
-        <img src="images/robot-chef.jpg" alt="Robot chef cocinando en una cocina moderna" class="news-image" width="300" height="200">
+        <img src="images/robo-chef.jpg" alt="Robô chef cozinhando em uma cozinha moderna" class="news-image" width="300" height="200">
         <div class="news-content">
-          <h2 class="news-title">Robot Chef Gana Competencia Culinaria Internacional</h2>
-          <p class="news-excerpt">Un robot con IA supera a chefs humanos en una prestigiosa competencia culinaria, generando debate sobre el futuro de la gastronomía.</p>
-          <a href="robot-chef-gana-competencia" class="read-more">Leer más</a>
+          <h2 class="news-title">Robô Chef Vence Competição Culinária Internacional</h2>
+          <p class="news-excerpt">Um robô com IA supera chefs humanos em uma prestigiada competição culinária, gerando debate sobre o futuro da gastronomia.</p>
+          <a href="robo-chef-vence-competicao" class="read-more">Leia mais</a>
         </div>
       </article>
 
       <article class="news-item">
-        <img src="images/teletransportacion-cuantica.jpg" alt="Científicos trabajando en un laboratorio con equipos de teletransportación cuántica" class="news-image" width="300" height="200">
+        <img src="images/teletransporte-quantico.jpg" alt="Cientistas trabalhando em um laboratório com equipamentos de teletransporte quântico" class="news-image" width="300" height="200">
         <div class="news-content">
-          <h2 class="news-title">Primer Éxito en Teletransportación Cuántica a Larga Distancia</h2>
-          <p class="news-excerpt">Científicos logran teletransportar información cuántica a una distancia récord, abriendo nuevas posibilidades en comunicación y computación.</p>
-          <a href="exito-teletransportacion-cuantica" class="read-more">Leer más</a>
+          <h2 class="news-title">Primeiro Sucesso em Teletransporte Quântico de Longa Distância</h2>
+          <p class="news-excerpt">Cientistas conseguem teletransportar informação quântica a uma distância recorde, abrindo novas possibilidades em comunicação e computação.</p>
+          <a href="sucesso-teletransporte-quantico" class="read-more">Leia mais</a>
         </div>
       </article>
 
       <article class="news-item">
-        <img src="images/arbol-milenario.jpg" alt="Árbol antiguo y majestuoso en un bosque" class="news-image" width="300" height="200">
+        <img src="images/arvore-milenar.jpg" alt="Árvore antiga e majestosa em uma floresta" class="news-image" width="300" height="200">
         <div class="news-content">
-          <h2 class="news-title">Descubren Árbol Milenario con Propiedades Medicinales Únicas</h2>
-          <p class="news-excerpt">Un árbol de más de 2000 años encontrado en una selva remota podría contener la clave para tratar enfermedades consideradas incurables.</p>
-          <a href="arbol-milenario-medicinal" class="read-more">Leer más</a>
+          <h2 class="news-title">Descobrem Árvore Milenar com Propriedades Medicinais Únicas</h2>
+          <p class="news-excerpt">Uma árvore com mais de 2000 anos encontrada em uma selva remota pode conter a chave para tratar doenças consideradas incuráveis.</p>
+          <a href="arvore-milenar-medicinal" class="read-more">Leia mais</a>
         </div>
       </article>
 
       <article class="news-item">
-        <img src="images/energia-fusion.jpg" alt="Reactor de fusión experimental brillando intensamente" class="news-image" width="300" height="200">
+        <img src="images/energia-fusao.jpg" alt="Reator de fusão experimental brilhando intensamente" class="news-image" width="300" height="200">
         <div class="news-content">
-          <h2 class="news-title">Avance Histórico en Energía de Fusión Promete Revolucionar el Mundo</h2>
-          <p class="news-excerpt">Científicos logran mantener una reacción de fusión controlada por más de una hora, acercándonos a una fuente de energía limpia e ilimitada.</p>
-          <a href="avance-energia-fusion" class="read-more">Leer más</a>
+          <h2 class="news-title">Avanço Histórico em Energia de Fusão Promete Revolucionar o Mundo</h2>
+          <p class="news-excerpt">Cientistas conseguem manter uma reação de fusão controlada por mais de uma hora, nos aproximando de uma fonte de energia limpa e ilimitada.</p>
+          <a href="avanco-energia-fusao" class="read-more">Leia mais</a>
         </div>
       </article>
     </div>
   </main>
 
   <footer>
-    <p>PortalNH.com &copy; 2023 - Las noticias más impactantes al alcance de un clic</p>
+    <p>PortalNH.com &copy; 2023 - As notícias mais impactantes ao alcance de um clique</p>
   </footer>
 
   <script>
-    // Animación suave al hacer scroll
+    // Animação suave ao fazer scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -212,7 +225,7 @@
       });
     });
 
-    // Lazy loading de imágenes
+    // Carregamento lazy de imagens
     document.addEventListener("DOMContentLoaded", function() {
       var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
